@@ -1,1 +1,23 @@
-
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>リアルタイム株価</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>リアルタイム株価</h1>
+        <input type="text" id="symbol" placeholder="銘柄（例: AAPL）" value="AAPL">
+        <button onclick="startFetching()">開始</button>
+        <button onclick="stopFetching()">停止</button>
+        <div id="stock-info">
+            <h2 id="stock-name">銘柄: -</h2>
+            <p id="stock-price" class="neutral">株価: -</p>
+            <p id="stock-time">更新時間: -</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
